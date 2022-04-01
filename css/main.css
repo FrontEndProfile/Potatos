@@ -11,6 +11,9 @@
 .font__46 {
   font-size: 46px; }
 
+.text__black {
+  color: #232E53; }
+
 .weight__100 {
   font-weight: 100; }
 
@@ -48,7 +51,8 @@ html, * {
 
 body {
   background: #ffff;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; }
 
 body, * {
   margin: 0;
@@ -68,6 +72,13 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .ui_btn {
   padding: 1.3rem 3.4rem !important; }
+
+.ui_text {
+  background: linear-gradient(84.08deg, #7A83FE -12.59%, #1CE2FE 97.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent; }
 
 header {
   margin-bottom: 5rem; }
@@ -112,6 +123,18 @@ header {
     z-index: -1;
     background-position: 74px -32px; }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../images/menu.svg); }
+
+.navbar-light .navbar-toggler {
+  border: 2px solid #D9DBFF;
+  border-radius: 3rem; }
+
+.navbar-toggler {
+  padding: 0.4rem 1.2rem;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+
 .fiverr {
   background-color: #E5E5E5; }
   .fiverr__snap {
@@ -129,10 +152,66 @@ header {
     transition: 0.6s all; }
   .font__54 {
     font-size: 42px; }
+  header .navbar-brand > img {
+    width: 7rem; }
   .hero__line::after {
     position: absolute !important;
     left: -115%;
     background-size: 85%;
     width: 200%;
-    background-position: 103px -32px; } }
+    background-position: 103px -32px; }
+  .hero {
+    height: 800px; } }
+
+@media (max-width: 1200px) {
+  .font__54 {
+    font-size: 38px; }
+  .hero {
+    height: 670px; } }
+
+@media (max-width: 991px) {
+  .font__54 {
+    font-size: 29px; }
+  .hero__content h3 {
+    letter-spacing: 0.12rem;
+    font-size: 16px; }
+  .hero__line::after {
+    background-position: 32px 35px; }
+  header .navbar-brand > img {
+    width: 5rem; }
+  .navbar-nav {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important; }
+  .hero {
+    height: 555px; } }
+
+@media (max-width: 767px) {
+  .hero__tittle_img {
+    max-width: 15rem !important;
+    margin-bottom: -3rem; }
+  .hero__img {
+    margin-left: 0;
+    margin-top: 3rem; }
+  .hero__line {
+    display: none; }
+  .hero {
+    height: auto; } }
+
+@media (max-width: 500px) {
+  .hero__content h3 {
+    margin: auto; }
+  .hero__content h4 {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .hero__content h4 img {
+      display: none; }
+  .hero__description p {
+    text-align: center; }
+    .hero__description p br {
+      display: none; }
+  .hero__btn {
+    text-align: center; } }
 /*# sourceMappingURL=main.css.map */

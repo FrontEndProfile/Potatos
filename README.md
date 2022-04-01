@@ -1,2 +1,0 @@
-# Potatos
-FIGMA INTO HTML

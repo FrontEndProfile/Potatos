@@ -4,6 +4,7 @@ $body:#ffff;
 $highlight : #EDEEFF;
 $purple : #7A83FE;
 $gray : #7580A5;
+$black : #232E53;
 
 $font__base : 16px;
 $font__18 : 18px;
@@ -17,6 +18,7 @@ $font__46 : 46px;
 .font__54 { font-size: $font__54;}
 .font__46 { font-size: $font__46;}
 
+.text__black { color: $black;}
 
 .weight__100 {font-weight: 100;}
 .weight__200 {font-weight: 200;}
@@ -43,7 +45,7 @@ html,* {
 body {
   background: $body;
   font-family: 'Poppins', sans-serif;
-
+  overflow-x: hidden;
 }
 body,* {
   margin: 0;
@@ -61,6 +63,13 @@ h1,h2,h3,h4,h5,h6,p,span {
 }
 .ui_btn {
   padding: 1.3rem 3.4rem !important;
+}
+.ui_text {
+  background: linear-gradient(84.08deg, #7A83FE -12.59%, #1CE2FE 97.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 // HEADER 
 header {
@@ -114,6 +123,17 @@ header {
     background-position: 74px -32px;
   }
 }
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../images/menu.svg);
+}
+.navbar-light .navbar-toggler {
+  border: 2px solid #D9DBFF;
+  border-radius: 3rem;
+}
+.navbar-toggler {
+  padding: 0.4rem 1.2rem;
+  box-shadow: none !important;
+}
 // FIVERR 
 .fiverr {
   background-color: #E5E5E5;
@@ -137,11 +157,85 @@ header {
   .font__54 {
     font-size: 42px;
   }
+  header .navbar-brand > img {
+    width: 7rem;
+  }
   .hero__line::after {
     position: absolute !important;
     left: -115%;
     background-size: 85%;
     width: 200%;
     background-position: 103px -32px;
+  }
+  .hero {
+    height: 800px;
+  }
+}
+@include media__max(1200){
+  .font__54 {
+    font-size: 38px;
+  }
+  .hero {
+    height: 670px;
+  }
+}
+@include media__max(991){
+  .font__54 {
+    font-size: 29px;
+  }
+  .hero__content h3 {
+    letter-spacing: 0.12rem;
+    font-size: 16px;
+  }
+  .hero__line::after {
+    background-position: 32px 35px;
+  }
+  header .navbar-brand > img {
+    width: 5rem;
+  }
+  .navbar-nav {
+    align-items: flex-start !important;
+  }
+  .hero {
+    height: 555px;
+  }
+}
+@include media__max(767){
+  .hero__tittle_img {
+    max-width: 15rem !important;
+    margin-bottom: -3rem;
+  }
+  .hero__img {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  .hero__line {
+    display: none;
+  }
+  .hero {
+    height: auto;
+  }
+}
+@include media__max(500){
+  .hero__content {
+    h3 {
+      margin: auto;
+    }
+    h4 {
+      text-align: center;
+      justify-content: center;
+      img {
+        display: none;
+      }
+    }
+  }
+  .hero__description p {
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+  .hero__btn {
+    text-align: center;
   }
 }
