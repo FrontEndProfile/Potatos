@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// VARIABLE VALUE 
+$body:#ffff;
+$highlight : #EDEEFF;
+$purple : #7A83FE;
+$gray : #7580A5;
+
+$font__base : 16px;
+$font__18 : 18px;
+$font__54 : 54px;
+$font__46 : 46px;
+
+
+
+.font__base { font-size: $font__base;}
+.font__18 { font-size: $font__18;}
+.font__54 { font-size: $font__54;}
+.font__46 { font-size: $font__46;}
+
+
+.weight__100 {font-weight: 100;}
+.weight__200 {font-weight: 200;}
+.weight__300 {font-weight: 300;}
+.weight__400 {font-weight: 400;}
+.weight__500 {font-weight: 500;}
+.weight__600 {font-weight: 600;}
+.weight__700 {font-weight: 700;}
+.weight__800 {font-weight: 800;}
+.weight__900 {font-weight: 900;}
+
+@mixin media__max($value:0,$unit:px) {
+  @media (max-width:$value + $unit ) {
+    @content;
+  }
+}
+html {
+  font-size: 10px !important;
+  font-family: 'Poppins', sans-serif;
+}
+html,* {
+  transition: 0.6s all;
+}
+body {
+  background: $body;
+  font-family: 'Poppins', sans-serif;
+
+}
+body,* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,span {
+  margin-bottom: 0;
+}
+.ui_gradient {
+  background: linear-gradient(84.08deg, #7A83FE -12.59%, #1CE2FE 97.95%);
+}
+.ui_shadow {
+  box-shadow: 0px 17px 45px 0px rgba(122, 131, 254, 0.35);
+}
+.ui_btn {
+  padding: 1.3rem 3.4rem !important;
+}
+// HEADER 
+header {
+  .navbar {
+    &-brand > img {
+      width: 8rem;
+    }
+  }
+  margin-bottom: 5rem;
+}
+// HERO 
+.hero {
+  &__content {
+    h3 {
+      background: $highlight;
+      border-radius: 7rem;
+      color: $purple;
+      letter-spacing: 0.18rem;
+      width: fit-content;
+    }
+  }
+  &__tittle_img {
+    margin-bottom: -6rem;
+  }
+  &__description p {
+    color: $gray;
+  }
+  height: 1000px;
+}
+.hero__side {
+  position: relative;
+}
+.hero__img {
+  margin-left: 5rem;
+}
+.hero__line {
+  position: absolute !important;
+  bottom: 30%;
+  width: 100%;
+  &::after {
+    position: absolute !important;
+    left: -130%;
+    top: -80px;
+    content: "";
+    background-image: url(../images/line_01.png);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    width: 215%;
+    height: 430px;
+    z-index: -1;
+    background-position: 74px -32px;
+  }
+}
+// FIVERR 
+.fiverr {
+  background-color: #E5E5E5;
+  &__snap {
+    width: 28rem;
+  }
+  .card {
+    background-color: #ffffff;
+  }
+}
+//  ALL MEDIA SCREEN 
+@include media__max(575){
+  body {
+    padding: 0px 1.5rem !important;
+  }
+}
+@include media__max(1400){
+  html,* {
+    transition: 0.6s all;
+  }
+  .font__54 {
+    font-size: 42px;
+  }
+  .hero__line::after {
+    position: absolute !important;
+    left: -115%;
+    background-size: 85%;
+    width: 200%;
+    background-position: 103px -32px;
+  }
+}

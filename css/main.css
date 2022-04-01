@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.font__base {
+  font-size: 16px; }
+
+.font__18 {
+  font-size: 18px; }
+
+.font__54 {
+  font-size: 54px; }
+
+.font__46 {
+  font-size: 46px; }
+
+.weight__100 {
+  font-weight: 100; }
+
+.weight__200 {
+  font-weight: 200; }
+
+.weight__300 {
+  font-weight: 300; }
+
+.weight__400 {
+  font-weight: 400; }
+
+.weight__500 {
+  font-weight: 500; }
+
+.weight__600 {
+  font-weight: 600; }
+
+.weight__700 {
+  font-weight: 700; }
+
+.weight__800 {
+  font-weight: 800; }
+
+.weight__900 {
+  font-weight: 900; }
+
+html {
+  font-size: 10px !important;
+  font-family: 'Poppins', sans-serif; }
+
+html, * {
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all; }
+
+body {
+  background: #ffff;
+  font-family: 'Poppins', sans-serif; }
+
+body, * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, p, span {
+  margin-bottom: 0; }
+
+.ui_gradient {
+  background: linear-gradient(84.08deg, #7A83FE -12.59%, #1CE2FE 97.95%); }
+
+.ui_shadow {
+  -webkit-box-shadow: 0px 17px 45px 0px rgba(122, 131, 254, 0.35);
+          box-shadow: 0px 17px 45px 0px rgba(122, 131, 254, 0.35); }
+
+.ui_btn {
+  padding: 1.3rem 3.4rem !important; }
+
+header {
+  margin-bottom: 5rem; }
+  header .navbar-brand > img {
+    width: 8rem; }
+
+.hero {
+  height: 1000px; }
+  .hero__content h3 {
+    background: #EDEEFF;
+    border-radius: 7rem;
+    color: #7A83FE;
+    letter-spacing: 0.18rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .hero__tittle_img {
+    margin-bottom: -6rem; }
+  .hero__description p {
+    color: #7580A5; }
+
+.hero__side {
+  position: relative; }
+
+.hero__img {
+  margin-left: 5rem; }
+
+.hero__line {
+  position: absolute !important;
+  bottom: 30%;
+  width: 100%; }
+  .hero__line::after {
+    position: absolute !important;
+    left: -130%;
+    top: -80px;
+    content: "";
+    background-image: url(../images/line_01.png);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    width: 215%;
+    height: 430px;
+    z-index: -1;
+    background-position: 74px -32px; }
+
+.fiverr {
+  background-color: #E5E5E5; }
+  .fiverr__snap {
+    width: 28rem; }
+  .fiverr .card {
+    background-color: #ffffff; }
+
+@media (max-width: 575px) {
+  body {
+    padding: 0px 1.5rem !important; } }
+
+@media (max-width: 1400px) {
+  html, * {
+    -webkit-transition: 0.6s all;
+    transition: 0.6s all; }
+  .font__54 {
+    font-size: 42px; }
+  .hero__line::after {
+    position: absolute !important;
+    left: -115%;
+    background-size: 85%;
+    width: 200%;
+    background-position: 103px -32px; } }
+/*# sourceMappingURL=main.css.map */
