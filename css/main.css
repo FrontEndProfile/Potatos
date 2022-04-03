@@ -20,6 +20,9 @@
 .text__black {
   color: #232E53; }
 
+.text__black_dark {
+  color: #0D204A; }
+
 .text__gray {
   color: #ACB4D1; }
 
@@ -64,7 +67,7 @@ html, * {
 body {
   background: #ffff;
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden !important; }
 
 body, * {
   margin: 0;
@@ -257,28 +260,46 @@ header {
             transform: rotate(-4deg);
     z-index: -1; }
 
-.contact {
-  height: 20rem;
-  position: relative; }
-  .contact__angle {
-    width: 15rem; }
-  .contact__layout {
-    position: absolute;
-    top: -80%;
-    left: 0;
-    height: 60rem;
-    width: 100%;
-    background-color: #adb1bb3a; }
-  .contact__form {
-    background: #FFFFFF;
-    -webkit-box-shadow: 0px 52.9185px 98.8478px rgba(0, 0, 0, 0.07);
-            box-shadow: 0px 52.9185px 98.8478px rgba(0, 0, 0, 0.07);
-    border-radius: 3rem;
-    width: 100%;
-    padding: 3rem 4rem; }
+.contact__angle {
+  width: 15rem; }
+
+.contact__layout {
+  top: -200%;
+  left: 0;
+  width: 100%; }
+
+.contact__form {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 52.9185px 98.8478px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 52.9185px 98.8478px rgba(0, 0, 0, 0.07);
+  border-radius: 3rem;
+  width: 100%;
+  padding: 3rem 4.5rem;
+  overflow: hidden;
+  margin-bottom: -25%; }
+  .contact__form form input, .contact__form form textarea {
+    border: 1.75px solid #7580A5;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 1rem 1.8rem; }
+    .contact__form form input:focus, .contact__form form textarea:focus {
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important; }
+    .contact__form form input::-webkit-input-placeholder, .contact__form form textarea::-webkit-input-placeholder {
+      color: #B5BDD2; }
+    .contact__form form input:-ms-input-placeholder, .contact__form form textarea:-ms-input-placeholder {
+      color: #B5BDD2; }
+    .contact__form form input::-ms-input-placeholder, .contact__form form textarea::-ms-input-placeholder {
+      color: #B5BDD2; }
+    .contact__form form input::placeholder, .contact__form form textarea::placeholder {
+      color: #B5BDD2; }
+
+.contact__form__snap {
+  margin-left: 15%; }
 
 footer {
-  padding-top: 30rem;
+  padding-top: 40rem;
   padding-bottom: 4rem;
   background: linear-gradient(81.08deg, #7A83FE 0%, #1CE2FE 101.09%); }
   footer .logo {
@@ -290,13 +311,20 @@ footer {
   footer .fix_w {
     width: 44.5rem; }
 
-@media (max-width: 575px) {
-  .container, .container-lg {
-    padding: 0rem 1.5rem !important; }
-  footer .fix_w {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+.contact__layout {
+  position: relative;
+  z-index: 1; }
+  .contact__layout::before {
+    position: absolute;
+    bottom: -1%;
+    left: -2%;
+    content: "";
+    width: 20rem;
+    height: 20rem;
+    background-image: url(../images/contact_part.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1; }
 
 @media (max-width: 1400px) {
   html, * {
@@ -317,7 +345,11 @@ footer {
   .service__layout {
     height: 1100px; }
   .liny::after {
-    left: 20%; } }
+    left: 20%; }
+  .contact__layout::before {
+    left: -4%; }
+  footer {
+    padding-top: 35rem; } }
 
 @media (max-width: 1200px) {
   .font__54 {
@@ -334,7 +366,11 @@ footer {
         flex-wrap: wrap;
     margin: 1rem; }
   .service__layout {
-    height: 900px; } }
+    height: 900px; }
+  .contact__layout::before {
+    left: -2%;
+    width: 15rem;
+    height: 15rem; } }
 
 @media (max-width: 991px) {
   .font__54 {
@@ -364,7 +400,13 @@ footer {
     font-size: 39px; }
   .liny::after {
     left: 0%;
-    bottom: -15%; } }
+    bottom: -15%; }
+  .contact__form {
+    padding: 3rem 3.5rem; }
+  .contact__layout::before {
+    left: -15%; }
+  footer {
+    padding-top: 22rem; } }
 
 @media (max-width: 767px) {
   .hero__tittle_img {
@@ -378,7 +420,24 @@ footer {
   .hero {
     height: auto; }
   .service__layout {
-    height: 1400px; } }
+    height: 1400px; }
+  .contact__layout::before {
+    display: none; }
+  .contact__form__snap {
+    margin-left: 0;
+    margin-top: 2rem; } }
+
+@media (max-width: 575px) {
+  .container, .container-lg {
+    padding: 0rem 1.5rem !important; }
+  footer .fix_w {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  footer {
+    padding-top: 16rem; }
+  .client__01 {
+    margin: 0.4rem 1rem; } }
 
 @media (max-width: 500px) {
   .hero__content h3 {
