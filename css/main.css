@@ -479,7 +479,22 @@ header {
     background-repeat: no-repeat;
     background-size: 3rem;
     background-position-x: 85%;
-    background-position-y: bottom; }
+    background-position-y: bottom;
+    z-index: -1; }
+
+.logo__design::after {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  content: "";
+  width: 100%;
+  height: 30%;
+  background-image: url(../images/blog__before.png);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  background-position-x: 85%;
+  background-position-y: bottom;
+  z-index: -1; }
 
 .blog__btn {
   background-color: rgba(48, 63, 114, 0.65);
@@ -688,7 +703,10 @@ footer {
     display: none; }
   .contact__form__snap {
     margin-left: 0;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    width: 20rem !important;
+    margin: auto;
+    text-align: center; }
   .slick-slide .col-md-4 > img {
     width: 20rem !important;
     margin: auto; }
@@ -728,7 +746,10 @@ footer {
     border-radius: 5rem;
     padding: 3rem 0rem; }
   .meet__content::before {
-    display: none !important; } }
+    display: none !important; }
+  .font__46 {
+    font-size: 35px;
+    text-align: center; } }
 
 @media (max-width: 575px) {
   .container, .container-lg {
@@ -740,7 +761,17 @@ footer {
   footer {
     padding-top: 16rem; }
   .client__01 {
-    margin: 0.4rem 1rem; } }
+    margin: 0.4rem 1rem; }
+  .font__46 {
+    font-size: 30px; }
+  .fiverr__snap {
+    width: 22rem; }
+  .font__18 {
+    font-size: 16px; }
+  .contact__form form input, .contact__form form textarea {
+    border: 1.75px solid #7580A5;
+    font-size: 15px;
+    padding: 0.6rem 1.4rem; } }
 
 @media (max-width: 500px) {
   .hero__content h3 {
@@ -759,7 +790,9 @@ footer {
   .hero__btn {
     text-align: center; }
   .liny::after {
-    display: none; } }
+    display: none; }
+  .font__46 {
+    font-size: 25px; } }
 
 @media (max-width: 1035px) {
   .slick-next {
