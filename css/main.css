@@ -328,6 +328,36 @@ header {
     background-position: left;
     z-index: -1; }
 
+.blur__effect__before {
+  position: relative; }
+  .blur__effect__before::before {
+    position: absolute;
+    left: 0;
+    bottom: -15%;
+    content: "";
+    width: 100%;
+    height: 50rem;
+    background-image: url(../images/Ellipse__blur.png);
+    background-repeat: no-repeat;
+    background-size: 33rem;
+    background-position: left;
+    z-index: -1; }
+
+.blur__effect__after {
+  position: relative; }
+  .blur__effect__after::after {
+    position: absolute;
+    right: 0;
+    top: -15%;
+    content: "";
+    width: 100%;
+    height: 50rem;
+    background-image: url(../images/right-Ellipse__blur.png);
+    background-repeat: no-repeat;
+    background-size: 33rem;
+    background-position: right;
+    z-index: -1; }
+
 .fiverr__snap {
   width: 28rem; }
 
@@ -479,8 +509,7 @@ header {
     background-repeat: no-repeat;
     background-size: 3rem;
     background-position-x: 85%;
-    background-position-y: bottom;
-    z-index: -1; }
+    background-position-y: bottom; }
 
 .logo__design::after {
   position: absolute;
@@ -493,8 +522,7 @@ header {
   background-repeat: no-repeat;
   background-size: 3rem;
   background-position-x: 85%;
-  background-position-y: bottom;
-  z-index: -1; }
+  background-position-y: bottom; }
 
 .blog__btn {
   background-color: rgba(48, 63, 114, 0.65);
@@ -771,7 +799,9 @@ footer {
   .contact__form form input, .contact__form form textarea {
     border: 1.75px solid #7580A5;
     font-size: 15px;
-    padding: 0.6rem 1.4rem; } }
+    padding: 0.6rem 1.4rem; }
+  .logo__design::after, .blog__post::after {
+    z-index: -1; } }
 
 @media (max-width: 500px) {
   .hero__content h3 {
