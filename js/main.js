@@ -68,3 +68,9 @@ AOS.init({
   // anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+// LOADER 
+var preloader = document.getElementById('load_icon');
+function load__() {
+  preloader.style.display = 'none';
+}

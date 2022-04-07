@@ -1078,3 +1078,11 @@ footer {
     transform: translateY(-40px);
   }
 }
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff url(../images/logo.png) center no-repeat;
+  z-index: 9999;
+  overflow: hidden;
+}
