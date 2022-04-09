@@ -83,12 +83,19 @@ h1,h2,h3,h4,h5,h6,p,span {
 }
 // HEADER 
 header {
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+  background-color: white;
   .navbar {
     &-brand > img {
       width: 8rem;
     }
   }
   margin-bottom: 5rem;
+}
+#header.active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 // HERO 
 .hero {
@@ -225,7 +232,7 @@ header {
 .slick-prev  {
   left: 25% !important;
   background: #D9DBFE !important;
-  z-index: 99;
+  z-index: 11;
   width: 4rem !important;
   height: 4rem !important;
   border-radius: 50%;
@@ -236,7 +243,7 @@ header {
 .slick-next {
   right: 25% !important;
   background: #D9DBFE !important;
-  z-index: 99;
+  z-index: 11;
   width: 4rem !important;
   height: 4rem !important;
   border-radius: 50%;
@@ -834,6 +841,16 @@ footer {
       display: none;
     }
   }
+  header {
+    .navbar-nav {
+      li {
+        margin: 0.6rem auto;
+        a {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
 }
 @include media__max(767){
   .hero__tittle_img {
@@ -1042,6 +1059,10 @@ footer {
 }
 
 // ANIMATION INFINITE 
+.contact__form__snap {
+  animation: mini__icon 1s infinite alternate;
+
+}
 .vert__move {
   animation: MoveUpDown 1.5s infinite alternate;
   position: relative;

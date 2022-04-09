@@ -99,9 +99,18 @@ h1, h2, h3, h4, h5, h6, p, span {
   text-fill-color: transparent; }
 
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+  background-color: white;
   margin-bottom: 5rem; }
   header .navbar-brand > img {
     width: 8rem; }
+
+#header.active {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; }
 
 .hero {
   height: 1000px; }
@@ -221,7 +230,7 @@ header {
 .slick-prev {
   left: 25% !important;
   background: #D9DBFE !important;
-  z-index: 99;
+  z-index: 11;
   width: 4rem !important;
   height: 4rem !important;
   border-radius: 50%; }
@@ -231,7 +240,7 @@ header {
 .slick-next {
   right: 25% !important;
   background: #D9DBFE !important;
-  z-index: 99;
+  z-index: 11;
   width: 4rem !important;
   height: 4rem !important;
   border-radius: 50%; }
@@ -729,7 +738,11 @@ footer {
   .font__44 {
     font-size: 35px; }
     .font__44 br {
-      display: none; } }
+      display: none; }
+  header .navbar-nav li {
+    margin: 0.6rem auto; }
+    header .navbar-nav li a {
+      margin: 0 !important; } }
 
 @media (max-width: 767px) {
   .hero__tittle_img {
@@ -874,6 +887,10 @@ footer {
     right: 5% !important; }
   .slick-prev {
     left: 5% !important; } }
+
+.contact__form__snap {
+  -webkit-animation: mini__icon 1s infinite alternate;
+          animation: mini__icon 1s infinite alternate; }
 
 .vert__move {
   -webkit-animation: MoveUpDown 1.5s infinite alternate;

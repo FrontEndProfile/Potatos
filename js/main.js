@@ -74,3 +74,14 @@ var preloader = document.getElementById('load_icon');
 function load__() {
   preloader.style.display = 'none';
 }
+
+// HEADER 
+$(window).scroll(function() {     
+  var scroll = $(window).scrollTop();
+  if (scroll > 0) {
+      $("#header").addClass("active");
+  }
+  else {
+      $("#header").removeClass("active");
+  }
+});

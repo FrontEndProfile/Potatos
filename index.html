@@ -16,7 +16,7 @@
   <body onload="load__()">
     <div id="load_icon" class="loading"></div>
     <!-- HEADER  -->
-    <header class="py-4">
+    <header class="py-4" id="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container px-0">
           <a class="navbar-brand" href="#">
@@ -28,20 +28,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
               <li class="nav-item">
-                <a class="nav-link font__base weight__500 text-black me-5" href="#">Home</a>
+                <a class="nav-link font__base weight__500 text-black me-5 ui_text" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link font__base weight__500 text-black me-5" href="#">Services</a>
+                <a class="nav-link font__base weight__500 text-black me-5" href="#service">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link font__base weight__500 text-black me-5" href="#">About Us</a>
+                <a class="nav-link font__base weight__500 text-black me-5" href="#about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link font__base weight__500 text-black me-5" href="#">Portfolio</a>
+                <a class="nav-link font__base weight__500 text-black me-5" href="#portfolio">Portfolio</a>
               </li>
               <!-- BTN  -->
               <li class="nav-item">
-                <a class="nav-link font__base weight__500 text-white ui_gradient ui_shadow rounded-pill ui_btn" href="#">Contact Us</a>
+                <a class="nav-link font__base weight__500 text-white ui_gradient ui_shadow rounded-pill ui_btn" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -49,7 +49,7 @@
       </nav>
     </header>
     <!-- HERO  -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="container px-0">
         <div class="row mx-0 justify-content-between align-items-center">
           <div class="col-md-5 px-0 hero__content">
@@ -119,7 +119,7 @@
       </div>
     </section>
     <!-- SERVICE  -->
-    <section class="service my-5">
+    <section class="service my-5" id="service">
       <div class="container px-0">
         <div class="row mx-0">
           <div class="col px-0 service__layout">
@@ -255,7 +255,7 @@
       </div>
     </section>
     <!-- Meet  -->
-    <section class="meet">
+    <section class="meet" id="about">
       <div class="container">
         <div class="row py-5">
           <div class="col text-center" data-aos="fade-up">
@@ -314,7 +314,7 @@
               <div class="col-md-3 d-flex flex-row">
                 <div class="row flex-column justify-content-between">
                   <div class="col px-4">
-                    <img class="w-100 mb-5 index_2 mb-5 mb-md-0" src="images/cardy__06.png" alt="cardy" data-aos="fade-up">
+                    <img class="w-100 mb-5 index_2 mb-5" src="images/cardy__06.png" alt="cardy" data-aos="fade-up">
                   </div>
                   <div class="col px-4">
                     <img class="backend_dev employ index_2 mb-5 mb-md-0"
@@ -351,7 +351,7 @@
     </section>
 
     <!-- Projects  -->
-    <section class="blog my-5">
+    <section class="blog my-5" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col px-0">
@@ -588,9 +588,8 @@
       </div>
     </section>
     <!-- Talk  -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
-
         <div class="contact__layout">
           <div class="container">
             <div class="row">
@@ -637,7 +636,7 @@
                         </div>
                         <div class="row text-end">
                           <div class="col my-sm-5 my-3 pt-5 hero__btn">
-                            <a class="text-decoration-none font__base weight__500 text-white ui_gradient ui_shadow rounded-pill ui_btn" href="#">Contact Us</a>
+                            <a class="text-decoration-none font__base weight__500 text-white ui_gradient ui_shadow rounded-pill ui_btn" href="mailto:mhmmdfaqih.09@gmail.com">Contact Us</a>
                           </div>
                         </div>
                       </form>
@@ -658,7 +657,7 @@
             <img class="logo" src="images/logo_footer.png" alt="logo_footer" data-aos="fade-in">
           </div>
           <div class="col-md-6 d-flex justify-content-center align-items-end flex-column px-0">
-            <ul class="fix_w m-0 p-0 list-unstyled d-flex align-items-center justify-content-end">
+            <ul class="fix_w m-0 p-0 list-unstyled d-flex align-items-center justify-content-md-end justify-content-start">
               <li class="me-4 d-flex align-items-end" data-aos="fade-in">
                 <a href="mailto:potatos.std@gmail.com" target="_blank" class="text-decoration-none font__18 text-white">
                 <img class="me-2" src="images/sms.png" alt="mail">
@@ -673,7 +672,7 @@
             </ul>
             <div class="footer__border my-3 fix_w">
             </div>
-            <ul class="m-0 p-0 my-4 list-unstyled d-flex align-items-center justify-content-end" data-aos="fade-in">
+            <ul class="m-0 p-0 my-4 list-unstyled d-flex align-items-center justify-content-md-end justify-content-center" data-aos="fade-in">
               <li class="me-4">
                 <img src="images/facebook.png" alt="facebook">
               </li>
