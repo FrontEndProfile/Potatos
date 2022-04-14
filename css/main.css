@@ -81,6 +81,9 @@ body, * {
 h1, h2, h3, h4, h5, h6, p, span {
   margin-bottom: 0; }
 
+a { 
+  text-decoration: none; }
+
 .ui_gradient {
   background: linear-gradient(84.08deg, #7A83FE -12.59%, #1CE2FE 97.95%); }
 
@@ -90,7 +93,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .ui_btn {
   padding: 1.3rem 3.4rem !important; }
-
 .ui_text {
   background: linear-gradient(84.08deg, #7A83FE -12.59%, #1CE2FE 97.95%);
   -webkit-background-clip: text;
@@ -128,7 +130,8 @@ header {
     color: #7580A5; }
 
 .hero__side {
-  position: relative; }
+  position: relative;
+  z-index: -999; }
 
 .hero__img {
   margin-left: 5rem;
@@ -158,6 +161,12 @@ header {
 .navbar-light .navbar-toggler {
   border: 2px solid #D9DBFF;
   border-radius: 3rem; }
+.navbar .active {
+  background: linear-gradient(84.08deg, #7A83FE -12.59%, #1CE2FE 97.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent; }
 
 .navbar-toggler {
   padding: 0.4rem 1.2rem;
@@ -177,7 +186,7 @@ header {
     content: "";
     position: absolute;
     top: 1px;
-    left: -20px;
+    left: -5px;
     bottom: 1px;
     right: 2px;
     background-color: #ffffff;
@@ -291,14 +300,14 @@ header {
     left: 22% !important; } }
 
 .client__span_img {
-  margin-left: -50%;
+  margin-left: -40%;
   width: 33rem; }
 
 .service__layout {
   background-image: url(../images/service__back.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 1300px;
+  height: auto;
   border-radius: 28px; }
 
 .service {
@@ -473,9 +482,7 @@ header {
     height: 30rem;
     background-image: url(../images/meet_right.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-animation: img_up_down 1s infinite alternate;
-            animation: img_up_down 1s infinite alternate; }
+    background-size: cover; }
 
 .contact__angle {
   width: 15rem; }
@@ -637,7 +644,7 @@ footer {
   .hero {
     height: 800px; }
   .service__layout {
-    height: 1100px; }
+    height: auto; }
   .liny::after {
     left: 20%; }
   .contact__layout::before {
@@ -672,7 +679,7 @@ footer {
         flex-wrap: wrap;
     margin: 1rem; }
   .service__layout {
-    height: 900px; }
+    height: auto; }
   .contact__layout::before {
     left: -2%;
     width: 15rem;
@@ -708,7 +715,7 @@ footer {
   .service__layout {
     background-size: cover;
     border-radius: 2.5rem;
-    height: 1050px; }
+    height: auto; }
     .service__layout p br {
       display: none; }
   .service__cards .card {
@@ -763,7 +770,7 @@ footer {
   .hero {
     height: auto; }
   .service__layout {
-    height: 1400px; }
+    height: auto; }
   .contact__layout::before {
     display: none; }
   .contact__form__snap {

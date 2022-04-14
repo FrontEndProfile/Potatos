@@ -13,13 +13,13 @@
 
     <title>HOME!</title>
   </head>
-  <body onload="load__()">
+  <body onload="load__()" id="body-home">
     <div id="load_icon" class="loading"></div>
     <!-- HEADER  -->
     <header class="py-4" id="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container px-0">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" alt="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
               <li class="nav-item">
-                <a class="nav-link font__base weight__500 text-black me-5 ui_text" href="index.html">Home</a>
+                <a class="nav-link font__base weight__500 text-black me-5 active" href="#body-home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link font__base weight__500 text-black me-5" href="#service">Services</a>
@@ -52,7 +52,7 @@
     <section class="hero" id="hero">
       <div class="container px-0">
         <div class="row mx-0 justify-content-between align-items-center">
-          <div class="col-md-5 px-0 hero__content">
+          <div class="col-md-5 px-0 hero__content mb-5 mb-md-0">
             <h3 class="px-5 py-3 font__18 weight__500 mb-5">
               WE ARE POTATOS STUDIO
             </h3>
@@ -62,7 +62,7 @@
 
             <h4 class="font__54 d-flex align-items-center mb-5 weight__700 ui_text">
               Website
-              <img class="w-100 hero__tittle_img ms-4"  src="images/arrow_left.png" alt="arrow_left hero__tittle_img" data-aos="fade-up">
+              <img class=" hero__tittle_img ms-4"  src="images/arrow_left.png" alt="arrow_left hero__tittle_img" data-aos="fade-up" style="width: 250px;">
             </h4>
             <div class="hero__description py-sm-5">
               <p class="font__18 weight__400">
@@ -71,7 +71,7 @@
               </p>
             </div>
             <div class="my-sm-5 my-3 pt-5 hero__btn">
-              <a class="text-decoration-none font__base weight__500 text-white ui_gradient ui_shadow rounded-pill ui_btn" href="#">Contact Us</a>
+              <a href="#contact" class="text-decoration-none font__base weight__500 text-white ui_gradient ui_shadow rounded-pill ui_btn">Contact Us</a>
             </div>
           </div>
           <div class="col-md-7 px-0 hero__side">
@@ -230,9 +230,9 @@
         <div class="row justify-content-between">
           <div class="col-md-5 d-flex mb-5 m-lg-0">
             <div class="card border-0 overflow-hidden" data-aos="fade-up">
-              <img src="images/fiverr_card_01.png" class="w-100" alt="...">
+              <a href="https://www.fiverr.com/potatosstudio"><img src="images/fiverr_card_01.png" class="w-100" alt="..."></a>
               <div class="card-body">
-                <h5 class="card-title mt-5 mb-4 font__28 weight__600 text__black">Potatos Studio</h5>
+               <a href="https://www.fiverr.com/potatosstudio"> <h5 class="card-title mt-5 mb-4 font__28 weight__600 text__black">Potatos Studio</h5></a>
                 <p class="card-text font__base text__gray_darky">Web design, Mobile app, Front-end Developer and 
                   Graphic Design
                 </p>
@@ -242,9 +242,9 @@
 
           <div class="col-md-5 d-flex">
             <div class="card border-0 overflow-hidden" data-aos="fade-up">
-              <img src="images/fiverr_card_02.png" class="w-100 light__shadow" alt="...">
+              <a href="https://www.fiverr.com/potatosstudio"><img src="images/fiverr_card_02.png" class="w-100 light__shadow" alt="..."></a>
               <div class="card-body">
-                <h5 class="card-title mt-5 mb-4 font__28 weight__600 text__black">Potatos Creative</h5>
+                <a href="https://www.fiverr.com/potatosstudio"><h5 class="card-title mt-5 mb-4 font__28 weight__600 text__black">Potatos Creative</h5></a>
                 <p class="card-text font__base text__gray_darky">
                   3D Art NFT
                 </p>
@@ -366,9 +366,9 @@
                   <img class="w-100" src="images/blog__01.png" alt="blog" data-aos="fade-up">
                 </div>
                 <div class="col-md-5 px-0 text-center text-md-start">
-                  <a href="#" class="blog__btn text-decoration-none font__18 ui_text">
+                  <span class="blog__btn text-decoration-none font__18 ui_text">
                     UI/UX Design
-                  </a>
+                  </span>
                   <h3 class="font__44 text-white weight__600 my-5">
                     Grow & Bless - <br>
                     Web Design
@@ -378,9 +378,9 @@
 
               <div class="row justify-content-center align-items-center blog__post mb-5 flex-column-reverse flex-md-row px-3 px-md-0 logo__design">
                 <div class="col-md-4 px-0 text-center text-md-start">
-                  <a href="#" class="blog__btn text-decoration-none font__18 ui_text">
+                  <span class="blog__btn text-decoration-none font__18 ui_text">
                     Graphic Design
-                  </a>
+                  </span>
                   <h3 class="font__44 text-white weight__600 my-5">
                     School Circle - <br>
                     Logo Design
@@ -396,9 +396,9 @@
                   <img class="w-100" src="images/blog__03.png" alt="blog" data-aos="fade-up">
                 </div>
                 <div class="col-md-5 px-0 text-center text-md-start">
-                  <a href="#" class="blog__btn text-decoration-none font__18 ui_text">
+                  <span href="#" class="blog__btn text-decoration-none font__18 ui_text">
                     3D Art NFT
-                  </a>
+                  </span>
                   <h3 class="font__44 text-white weight__600 my-5">
                     3D Art NFT - <br>
                     Isometric 3D
@@ -653,7 +653,7 @@
     <footer>
       <div class="container px-0">
         <div class="row mx-0 justify-content-between ">
-          <div class="col-md-2 px-0 text-center text-md-start my-5 my-md-0">
+          <div class="col-md-2 px-0 text-start my-5 my-md-0">
             <img class="logo" src="images/logo_footer.png" alt="logo_footer" data-aos="fade-in">
           </div>
           <div class="col-md-6 d-flex justify-content-center align-items-end flex-column px-0">
@@ -672,7 +672,7 @@
             </ul>
             <div class="footer__border my-3 fix_w">
             </div>
-            <ul class="m-0 p-0 my-4 list-unstyled d-flex align-items-center justify-content-md-end justify-content-center" data-aos="fade-in">
+            <ul class="m-0 p-0 my-4 list-unstyled d-flex align-items-center justify-content-md-end justify-content-start w-100" data-aos="fade-in">
               <li class="me-4">
                 <img src="images/facebook.png" alt="facebook">
               </li>
@@ -683,7 +683,7 @@
                 <img src="images/linkedin.png" alt="linkedin">
               </li>
               <li >
-                <img src="images/flickr.png" alt="flicker">
+                <a href="https://www.flickr.com/photos/192928074@N08/" target="_blank"><img src="images/flickr.png" alt="flicker"></a>
               </li>
 
             </ul>
